@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coro La Voce della Valle — CAI Cividale del Friuli</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="hamburger" aria-label="Apri il menu" aria-expanded="false" aria-controls="sidebar">
+  <i class="fa-solid fa-bars" aria-hidden="true"></i>
+  <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+</button>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<nav class="sidebar" id="sidebar" aria-label="Menu principale">
+  <div class="brand">
+    <img src="/imgs/assets/logoBianco.jpg" alt="Il coro durante un'esibizione" loading="lazy">
+    <!--span class="brand-mark" aria-hidden="true">LV</span-->
+    <!--span class="brand-name">CAI&nbsp;CIVIDALE</span-->
+  </div>
+  <ul class="sidebar-list">
+    <li><a href="#" data-page="home" class="active" aria-current="page">
+      <i class="fa-solid fa-house" aria-hidden="true"></i><span class="text">Home</span>
+    </a></li>
+    <li><a href="#" data-page="about">
+      <i class="fa-solid fa-music" aria-hidden="true"></i><span class="text">Chi siamo</span>
+    </a></li>
+    <li><a href="#" data-page="concerts">
+      <i class="fa-solid fa-microphone" aria-hidden="true"></i><span class="text">Concerti</span>
+    </a></li>
+    <li><a href="#" data-page="contact">
+      <i class="fa-regular fa-paper-plane" aria-hidden="true"></i><span class="text">Contatti</span>
+    </a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="view">
+
+    <!-- ===================== HOME ===================== -->
+    <section id="home" class="page active" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-text">
+          <h1 id="home-title">La Voce della Valle</h1>
+          <h2>Il suono della tradizione alpina</h2>
+          <p>Un coro di uomini, una storia, una passione. Scopri le nostre armonie.</p>
+        </div>
+
+        <div class="hero-image" role="region" aria-label="Galleria di immagini del coro">
+          <div class="slide active"><img src="/imgs/assets/1.JPG" alt="Il coro durante un'esibizione" loading="eager"></div>
+          <div class="slide"><img src="/imgs/assets/2.JPG" alt="Il coro durante un'esibizione" loading="lazy"></div>
+          <div class="slide"><img src="/imgs/assets/3.JPG" alt="Il coro durante un'esibizione" loading="lazy"></div>
+          <div class="slide"><img src="/imgs/assets/Matajur1.jpg" alt="Il Monte Matajur, nelle Valli del Natisone" loading="lazy"></div>
+          <div class="dots-container" role="tablist" aria-label="Seleziona immagine">
+            <button class="dot active" role="tab" aria-label="Immagine 1" data-slide="0"></button>
+            <button class="dot" role="tab" aria-label="Immagine 2" data-slide="1"></button>
+            <button class="dot" role="tab" aria-label="Immagine 3" data-slide="2"></button>
+            <button class="dot" role="tab" aria-label="Immagine 4" data-slide="3"></button>
+          </div>
+        </div>
+      </div>
+
+      <svg class="ridge" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+        <path class="peak" d="M0,90 L0,55 L80,30 L160,48 L260,15 L360,42 L460,20 L560,50 L680,12 L800,38 L900,22 L1000,46 L1100,28 L1200,50 L1200,90 Z"/>
+        <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+        <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+        <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+        <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+      </svg>
+
+      <div class="facts">
+        <div class="fact">
+          <span class="num">2023</span>
+          <span class="label">Anno della fusione dei due cori</span>
+        </div>
+        <div class="fact">
+          <span class="num">30</span>
+          <span class="label">Coristi, circa</span>
+        </div>
+        <div class="fact">
+          <span class="num">4</span>
+          <span class="label">Linee vocali</span>
+        </div>
+        <div class="fact">
+          <span class="num" style="font-size: clamp(1.1rem, 2.4vw, 1.5rem);">Alessandro Rizzi</span>
+          <span class="label">Maestro del coro</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHI SIAMO ===================== -->
+    <section id="about" class="page" aria-labelledby="about-title">
+      <div class="page-head">
+        <span class="eyebrow">Chi siamo</span>
+        <h2 id="about-title">Il nostro coro</h2>
+      </div>
+
+      <div class="story">
+
+        <article class="story-row">
+          <div class="story-text">
+            <p>Il coro "La voce della valle – CAI di Cividale del Friuli" è un coro virile di ispirazione popolare, con una duplice natura. La formazione attuale, infatti, nasce dall'unione di due cori avvenuta nel 2023: "La Voce della Valle" ed il coro "Renzo Basaldella" del CAI di Cividale del Friuli.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/Vajon1.jpg" alt="Il coro in valle" loading="lazy"></div>
+        </article>
+
+        <svg class="story-divider" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+          <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+          <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+          <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+        </svg>
+
+        <article class="story-row reverse">
+          <div class="story-text">
+            <p>A seguito degli eventi straordinari che hanno caratterizzato gli ultimi anni della nostra società, le due formazioni hanno sentito la necessità e la responsabilità di unire le loro forze e di legarsi insieme, con l'obiettivo proprio di proteggere e continuare a tramandare quel patrimonio che, altrimenti, avrebbe rischiato di perdersi.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/SanPietro5.jpg" alt="Il coro in concerto" loading="lazy"></div>
+        </article>
+
+        <svg class="story-divider" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+          <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+          <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+          <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+        </svg>
+
+        <article class="story-row">
+          <div class="story-text">
+            <p>L'attuale formazione, diretta dal Maestro Alessandro Rizzi e composta da circa 30 elementi divisi su quattro linee vocali, è un mosaico di storia e tradizioni: quella delle Valli del Natisone e delle loro montagne e quella alpina, friulana e popolare in generale.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/SanPietro3.jpg" alt="Il coro durante una performance" loading="lazy"></div>
+        </article>
+
+        <svg class="story-divider" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+          <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+          <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+          <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+        </svg>
+
+        <article class="story-row reverse">
+          <div class="story-text">
+            <p>In un'unica armonia, porta in dote i volti, le esperienze, le canzoni ed i ricordi dei due cori originari, col risultato di un repertorio molto vasto e, soprattutto, di un'identità comunitaria e corale straordinaria.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/SanPietro4.jpg" alt="Il coro al lavoro" loading="lazy"></div>
+        </article>
+
+        <svg class="story-divider" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+          <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+          <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+          <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+        </svg>
+
+        <article class="story-row">
+          <div class="story-text">
+            <p>Oggi come nel passato, il coro si impegna con passione, costanza, responsabilità e un pizzico di coraggio, nella sua missione. Quella di fare in modo che le canzoni dei nostri nonni, che parlano di guerra, di dolore, di sogni, di amore e di speranze, e che da secoli contribuiscono a rendere la nostra storia e la nostra identità unica, possano continuare a risuonare ancora nell'animo di chi ascolta.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/SanPietro2.jpg" alt="Il coro durante un'esibizione" loading="lazy"></div>
+        </article>
+
+        <svg class="story-divider" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+          <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+          <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+          <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+        </svg>
+
+        <article class="story-row reverse">
+          <div class="story-text">
+            <p>Fanno parte del nostro repertorio canzoni d'autore, canti degli Alpini e di montagna, villotte e canti popolari della tradizione friulana, veneta e trentina, canti religiosi.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/SanPietro1.jpg" alt="Il coro in posa" loading="lazy"></div>
+        </article>
+
+        <svg class="story-divider" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+          <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+          <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+          <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+          <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+        </svg>
+
+        <article class="story-row">
+          <div class="story-text">
+            <p>Grazie alle voci di oggi, possiamo viaggiare nel tempo e rivivere in modo estremamente toccante le stesse emozioni e gli stessi battiti del cuore di chi ci ha preceduto.</p>
+          </div>
+          <div class="story-img"><img src="/imgs/assets/Matajur1.jpg" alt="Il Monte Matajur" loading="lazy"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONCERTI ===================== -->
+    <section id="concerts" class="page" aria-labelledby="concerts-title">
+      <div class="page-head">
+        <span class="eyebrow">Concerti</span>
+        <h2 id="concerts-title">Prossimi appuntamenti</h2>
+        <p>Scopri i prossimi concerti e gli eventi del coro.</p>
+      </div>
+
+      <!--
+        Quando avrete le date dei prossimi concerti, duplicate questo blocco
+        per ciascun evento e cancellate il div.empty-state qui sotto:
+
+        <div class="concert-card">
+          <div class="concert-date"><span class="d">14</span><span class="m">Set</span></div>
+          <div class="concert-info">
+            <h3>Nome del concerto o della rassegna</h3>
+            <span>Luogo, città — ore 20:30</span>
+          </div>
+        </div>
+      -->
+
+      <div class="empty-state">
+        <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem;">Il calendario è in aggiornamento</h3>
+        <p>Stiamo preparando le prossime date. Scriveteci per essere avvisati appena saranno confermate, o per invitare il coro a un vostro evento.</p>
+        <a href="#" class="btn primary" data-page="contact">Contattaci</a>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATTI ===================== -->
+    <section id="contact" class="page" aria-labelledby="contact-title">
+      <div class="page-head">
+        <span class="eyebrow">Contatti</span>
+        <h2 id="contact-title">Scriveteci</h2>
+        <p>Per informazioni, inviti a eventi o per unirsi al coro.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card" style="cursor: default;">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <!--a class="contact-card" href="https://maps.app.goo.gl/9afPZQjw8wMb5evU7"></a-->
+            <span class="label">Indirizzo</span>
+            <span class="value">Via San Lazzaro, 34 - Cividale del Friuli (UD)</span>
+          
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span class="label">Telefono</span>
+          <span class="value">+39 334 8156436</span>
+        </div>
+        <a class="contact-card" href="mailto:corolavocedellavalle@gmail.com">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+          <span class="label">Email</span>
+          <span class="value">corolavocedellavalle@gmail.com</span>
+        </a>
+        <a class="contact-card" style="cursor: default;" href="https://www.instagram.com/corolavocedellavalle/">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span class="label">Instagram</span>
+          <span class="value">@corolavocedellavalle</span>
+        </a>
+        <a class="contact-card" style="cursor: default;" href="https://www.facebook.com/groups/60235294611">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          <span class="label">Facebook</span>
+          <span class="value">La Voce della Valle - CAI Cividale del Friuli</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <!--svg class="ridge-small" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+      <path class="line l4" d="M0,60 C150,40 300,70 450,50 C600,30 750,65 900,45 C1050,25 1150,55 1200,40"/>
+      <path class="line l3" d="M0,30 C150,45 300,15 450,40 C600,60 750,20 900,45 C1050,65 1150,35 1200,48"/>
+      <path class="line l2" d="M0,50 C150,65 300,35 450,55 C600,75 750,40 900,60 C1050,80 1150,50 1200,62"/>
+      <path class="line l1" d="M0,40 C150,20 300,55 450,35 C600,15 750,50 900,30 C1050,10 1150,40 1200,28"/>
+    </svg-->
+    <p>© <span id="year"></span> Coro La Voce della Valle — CAI Cividale del Friuli</p>
+  </footer>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
